@@ -1,31 +1,45 @@
   <script lang="ts" setup>
-    //
+import { ref } from 'vue';
+
+
+  const dialog = ref<boolean>(false);
+
   </script>
 
 
 <template>
   <v-app>
-    <v-app-bar :elevation="3">
-  <template v-slot:prepend>
-    <v-app-bar-nav-icon></v-app-bar-nav-icon>
-  </template>
+    <v-app-bar :elevation="3" class="nav">
 
-  <v-app-bar-title>Gustavo Cortezia</v-app-bar-title>
+  <v-app-bar-title class="nav-title">Gustavo Cortezia
+     <v-btn class="ml-10"><img src="./assets/brasil_bandeira.png" alt="" width="50px"></v-btn>
+     <v-btn><img src="./assets/eua_bandeira.png" alt="" width="50px"></v-btn>
+    </v-app-bar-title>
 
-  <template v-slot:append>
-    <v-btn icon="mdi-heart"></v-btn>
 
-    <v-btn icon="mdi-magnify"></v-btn>
 
-    <v-btn icon="mdi-dots-vertical"></v-btn>
-  </template>
+    <v-btn >About Me</v-btn>
+
+    <v-btn>Education</v-btn>
+
+    <v-btn>Hard Skills</v-btn>
+
+    <v-btn>Soft Skills</v-btn>
+
+    <v-btn>Projects</v-btn>
+
+    <v-btn>Contancts</v-btn>
+
+
 </v-app-bar>
 
 <div class="home-bg">
   <v-row class="mx-15">
     <v-col md="6" sm="12" class="col">
       <div class="img-div">
-        <img class="minha-foto rounded-circle" width="400px" height="400px" src="./assets/Captura de tela 2024-07-15 144029.png" alt="">
+        <a href="https://www.linkedin.com/in/gustavocortezia/" target="_blank">
+    <img class="minha-foto rounded-circle" width="400px" height="400px" src="./assets/Captura de tela 2024-07-15 144029.png" alt="Minha Foto">
+  </a>
       </div>
     </v-col>
 
@@ -59,7 +73,7 @@
 
 <v-card-text>
   <p class="about-card-text">
-    I have knowledge in HTML, CSS, JavaScript, Java, PHP, Laravel, Bootstrap, TypeScript, VueJS, Vuetify and MySQL. Besides, some of my strengths are social skills, creativity, emocional intelligence and problem solving. I am a very determined and committed person and I’m always looking forward to a better future.
+    Tenho conhecimento em HTML, CSS, JavaScript, Java, PHP, Laravel, Bootstrap, TypeScript, VueJS, Vuetify e MySQL. Além disso, alguns dos meus pontos fortes são habilidades sociais, criatividade, inteligência emocional, resolução de problemas e inglês avançado. Sou uma pessoa muito determinada e comprometida e estou sempre em busca de um futuro melhor.
   </p>
 </v-card-text>
 
@@ -154,6 +168,7 @@
     <h3>O Programa Starter Full Stack Developer é uma formação completa que vai dos fundamentos da programação e tecnologia até o desenvolvimento de um software completo com front-end, back-end, banco de dados, cache, com qualidade garantida com testes automatizados e a disponibilização (deploy) do sistema em produção. Além disso, os alunos têm a oportunidade de aplicar os seus conhecimentos em projetos contratados por empresas, desenvolvidos na fábrica de software da Growdev.</h3>
 <br>
     <h3>Fui selecionado pela<span class="despertar-dev"> Sicredi Pioneira</span>, por meio de um processo seletivo, para ganhar uma bolsa de estudos (100%) para o Starter Growdev Program, do qual me garantiu muito aprendizado e experiência </h3>
+    <h3>Carga Horária: 1000 horas</h3>
     </div>
 
 
@@ -210,15 +225,205 @@
   </div>
   </div>
 
+    <div class="projects-div">
+      <h1 class="projects-title ma-15">Projects</h1>
+
+      <div class="projetos-subdiv">
+
+      <v-row>
+        <v-col>
+          <div class="proj-div">
+            <h3>GrowTwitter</h3>
+            <p>Aplicação que imita a rede social "Twitter", com postagens, curtidas, página com listagem de tweets, página de perfil, login com autenticação e muito mais</p>
+            <div class="text-center pa-4">
+              <v-btn @click="dialog = true">
+                Open Dialog
+              </v-btn>
+
+              <v-dialog
+                v-model="dialog"
+                width="auto"
+              >
+              <v-card class="modal-project pa-6" max-width="800">
+                  <v-btn
+                      class="btn-close-modal ms-auto"
+                      text="x"
+                      @click="dialog = false"
+                    ></v-btn>
+                  <v-card-title class="modal-title ma-3">GrowTwitter</v-card-title>
+
+
+                <iframe class="video-player-tag" width="560" height="315" src="https://www.youtube.com/embed/W8Y-pKCKZNU"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+
+                <v-btn class="btn-project-modal mt-6 mb-3">Abrir Projeto</v-btn>
+
+                </v-card>
+              </v-dialog>
+            </div>
+          </div>
+        </v-col>
+
+
+        <v-col>
+          <div class="proj-div">
+            <h3>Crud Mentores Growdev</h3>
+            <p>Aplicação que imita a rede social "Twitter", com postagens, curtidas, página com listagem de tweets, página de perfil, login com autenticação e muito mais</p>
+            <div class="text-center pa-4">
+              <v-btn @click="dialog = true">
+                Open Dialog
+              </v-btn>
+
+              <v-dialog
+                v-model="dialog"
+                width="auto"
+              >
+              <v-card class="modal-project pa-6" max-width="800">
+                  <v-btn
+                      class="btn-close-modal ms-auto"
+                      text="x"
+                      @click="dialog = false"
+                    ></v-btn>
+                  <v-card-title class="modal-title ma-3">GrowTwitter</v-card-title>
+
+
+                <iframe class="video-player-tag" width="560" height="315" src="https://www.youtube.com/embed/W8Y-pKCKZNU"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+
+                <v-btn class="btn-project-modal mt-6 mb-3">Abrir Projeto</v-btn>
+
+                </v-card>
+              </v-dialog>
+            </div>
+          </div>
+        </v-col>
+
+        <v-col>
+          <div class="proj-div">
+            <h3>API Rick and Morty</h3>
+            <p>Aplicação que imita a rede social "Twitter", com postagens, curtidas, página com listagem de tweets, página de perfil, login com autenticação e muito mais</p>
+            <div class="text-center pa-4">
+              <v-btn @click="dialog = true">
+                Open Dialog
+              </v-btn>
+
+              <v-dialog
+                v-model="dialog"
+                width="auto"
+              >
+              <v-card class="modal-project pa-6" max-width="800">
+                  <v-btn
+                      class="btn-close-modal ms-auto"
+                      text="x"
+                      @click="dialog = false"
+                    ></v-btn>
+                  <v-card-title class="modal-title ma-3">GrowTwitter</v-card-title>
+
+
+                <iframe class="video-player-tag" width="560" height="315" src="https://www.youtube.com/embed/W8Y-pKCKZNU"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+
+                <v-btn class="btn-project-modal mt-6 mb-3">Abrir Projeto</v-btn>
+
+                </v-card>
+              </v-dialog>
+            </div>
+          </div>
+        </v-col>
+
+        <v-col>
+          <div class="proj-div">
+            <h3>Cópia Sicredi Front</h3>
+            <p>Aplicação que imita a rede social "Twitter", com postagens, curtidas, página com listagem de tweets, página de perfil, login com autenticação e muito mais</p>
+            <div class="text-center pa-4">
+              <v-btn @click="dialog = true">
+                Open Dialog
+              </v-btn>
+
+              <v-dialog
+                v-model="dialog"
+                width="auto"
+              >
+              <v-card class="modal-project pa-6" max-width="800">
+                  <v-btn
+                      class="btn-close-modal ms-auto"
+                      text="x"
+                      @click="dialog = false"
+                    ></v-btn>
+                  <v-card-title class="modal-title ma-3">GrowTwitter</v-card-title>
+
+
+                <iframe class="video-player-tag" width="560" height="315" src="https://www.youtube.com/embed/W8Y-pKCKZNU"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+
+                <v-btn class="btn-project-modal mt-6 mb-3">Abrir Projeto</v-btn>
+
+                </v-card>
+              </v-dialog>
+            </div>
+          </div>
+        </v-col>
+
+        <v-col>
+          <div class="proj-div">
+            <h3>Find my Pet</h3>
+            <p>Aplicação que imita a rede social "Twitter", com postagens, curtidas, página com listagem de tweets, página de perfil, login com autenticação e muito mais</p>
+            <div class="text-center pa-4">
+              <v-btn @click="dialog = true">
+                Open Dialog
+              </v-btn>
+
+              <v-dialog
+                v-model="dialog"
+                width="auto"
+              >
+              <v-card class="modal-project pa-6" max-width="800">
+                  <v-btn
+                      class="btn-close-modal ms-auto"
+                      text="x"
+                      @click="dialog = false"
+                    ></v-btn>
+                  <v-card-title class="modal-title ma-3">GrowTwitter</v-card-title>
+
+
+                <iframe class="video-player-tag" width="560" height="315" src="https://www.youtube.com/embed/W8Y-pKCKZNU"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+
+                <v-btn class="btn-project-modal mt-6 mb-3">Abrir Projeto</v-btn>
+
+                </v-card>
+              </v-dialog>
+            </div>
+          </div>
+        </v-col>
+
+
+      </v-row>
+
+      </div>
+    </div>
+
+
+
 
 
 
 
   </v-app>
-
 </template>
 
 <style>
+
+  .nav-title{
+    font-weight: bold !important;
+    font-size: 1.6rem !important;
+    margin-left: 50px !important;
+  }
 
   .gustavo-nome {
     font-size: 5rem;
@@ -235,10 +440,13 @@
 
   .minha-foto {
     border: 5px solid rgb(17, 100, 209);
+    position: relative;
+    transition: transform 0.4s, box-shadow 0.8s !important;
   }
 
   .minha-foto:hover {
-    border: 5px solid white;
+    box-shadow: 0px 0px 66px -10px  rgb(17, 100, 209);
+    transform: scale(0.95);
   }
 
   .home-text {
@@ -425,4 +633,85 @@
   color: rgb(17, 100, 209);
 }
 
+.nav {
+  border-bottom: 2px solid rgb(17, 100, 209) !important;
+  background-color: rgb(18, 18, 18) !important;
+}
+
+.projects-div{
+  border-top: rgb(17, 100, 209) 2px solid;
+  background-color: rgb(25, 25, 25);
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projects-title{
+  color: rgb(17, 100, 209);
+  margin-top: 70px !important;
+  font-size: 2.6rem;
+}
+
+.proj-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 250px;
+  border: 3px solid rgb(17, 100, 209);
+  padding: 20px;
+}
+
+.projetos-subdiv{
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  border: 1px solid beige;
+  height: 600px;
+}
+
+.modal-project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px !important;
+}
+
+.video-player-tag{
+  border-radius: 10px;
+}
+
+.modal-title {
+  color: rgb(17, 100, 209);
+  font-size: 1.6rem !important;
+}
+
+.btn-close-modal{
+  margin-bottom: -40px;
+  margin-top: -5px;
+  margin-right: -15px;
+  width: 10px !important;
+  box-shadow: none !important;
+  border-radius: 50px !important;
+}
+
+.btn-close-modal:hover{
+  color: red;
+}
+
+.btn-project-modal{
+  color: rgb(17, 100, 209) !important;
+  border: 1px solid rgb(17, 100, 209) !important;
+}
+
+.btn-project-modal:hover{
+  color: rgb(18, 18, 18) !important;
+  border: 1px solid rgb(18, 18, 18) !important;
+  background-color: rgb(17, 100, 209);
+}
+
 </style>
+
