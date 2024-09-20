@@ -36,24 +36,25 @@ function closeSkill(index: number) {
   <v-app>
     <v-app-bar :elevation="3" class="nav">
 
-  <v-app-bar-title class="nav-title">Gustavo Cortezia pt
+  <v-app-bar-title class="nav-title">Gustavo Cortezia
      <v-btn class="ml-4 btn-lingua"><img src="../assets/brasil_circulo.png" alt="" width="51px"></v-btn>
      <v-btn @click="ingles" class="btn-lingua"><img src="../assets/USAworld_flags_6_-512.webp" alt="" width="33px"></v-btn>
     </v-app-bar-title>
 
+<div class="nav-btns">
+  <v-btn href="#about-me">Sobre mim</v-btn>
 
+  <v-btn href="#education">Educação</v-btn>
 
-  <v-btn href="#about-me">About Me</v-btn>
+  <v-btn href="#hard-skills">Hard Skills</v-btn>
 
-<v-btn href="#education">Education</v-btn>
+  <v-btn href="#soft-skills">Soft Skills</v-btn>
 
-<v-btn href="#hard-skills">Hard Skills</v-btn>
+  <v-btn href="#projects">Projetos</v-btn>
 
-<v-btn href="#soft-skills">Soft Skills</v-btn>
+  <v-btn href="#contacts">Contatos</v-btn>
+</div>
 
-<v-btn href="#projects">Projects</v-btn>
-
-<v-btn href="#contacts">Contacts</v-btn>
 
 
 </v-app-bar>
@@ -73,7 +74,7 @@ function closeSkill(index: number) {
 
         <h1 class="gustavo-nome mb-6">Gustavo Cortezia</h1>
         <div class="home-text-div">
-          <p class="home-text" id="about-me"> Web Full Stack Developer | Computer Science | VueJS | Laravel | MySQL | PHP | JavaScript | TypeScript | Java | HTML | CSS</p>
+          <p class="home-text" id="about-me"> Desenvolvedor Web Full Stack | Computer Science | VueJS | Laravel | MySQL | PHP | JavaScript | TypeScript | Java | HTML | CSS</p>
         </div>
         </div>
     </v-col>
@@ -87,76 +88,68 @@ function closeSkill(index: number) {
 
 <v-card-title >
   <p class="about-card-title">
-    About Me
+    Sobre mim
   </p>
 </v-card-title>
 
 <v-card-text>
   <p class="about-card-text">
-    I’ve been studying Computer Science at Unisinos University. I was also selected by Sicredi Pioneira, one of the largest financial institutions in Latin America to study Web Full Stack Development at Growdev, a tecnology school that trains professionals for the digital product market. I studied all my elementary and high school at Colégio Sinodal, one of the best schools in Rio Grande do Sul.
-  </p>
+    Estou cursando o quarto semestre de Ciência da Computação na Universidade do Vale do Rio dos Sinos (Unisinos) e finalizando o programa de 1000 horas de formação em Desenvolvimento Web Full Stack na Growdev, uma escola de tecnologia que capacita profissionais para o mercado de trabalho. Por meio de um processo seletivo em que participaram mais de 1.200 candidatos, fui selecionado pela Sicredi Pioneira e recebi uma bolsa de estudos integral para o programa. Realizei todo o meu ensino fundamental e médio no Colégio Sinodal de São Leopoldo, reconhecido como uma das melhores escolas do Rio Grande do Sul.   </p>
 </v-card-text>
 
 <v-card-text>
   <p class="about-card-text">
-    Tenho conhecimento em HTML, CSS, JavaScript, Java, PHP, Laravel, Bootstrap, TypeScript, VueJS, Vuetify e MySQL. Além disso, alguns dos meus pontos fortes são habilidades sociais, criatividade, inteligência emocional, resolução de problemas e inglês avançado. Sou uma pessoa muito determinada e comprometida e estou sempre em busca de um futuro melhor.
-  </p>
+    A formação técnica que já obtive me deixa seguro para iniciar a carreira de desenvolvedor full stack. Tenho sólido conhecimento em HTML, CSS, JavaScript, Java, PHP, Laravel, Bootstrap, TypeScript, VueJS, Vuetify e MySQL. Alguns dos meus pontos fortes são habilidades sociais, criatividade, inteligência emocional, resolução de problemas e inglês avançado. Sou uma pessoa muito determinada e comprometida e estou sempre em busca de aprender e realizar minhas entregas com qualidade, ajudando a criar um futuro melhor.  </p>
 </v-card-text>
 
 </v-card>
 </div>
 
 <div class="educacao" id="education">
-  <h1 class="education-title mt-15">My Education</h1>
+  <h1 class="education-title mt-15">Minha Educação</h1>
 
-  <v-row class="div-container">
+  <v-row class="div-container" no-gutters>
     <v-col md="6" sm="12" class="col-educ">
       <v-card class="unisinos-card mx-auto" width="400" height="550">
-        <v-img class="align-end text-white" height="300" width="400" src="../assets/image.png" cover></v-img>
+        <v-img class="uni-img align-end text-white" height="300" width="400" src="../assets/image.png" cover></v-img>
         <div class="pa-5">
-          <v-card-title class="educ-card-title">Unisinos University</v-card-title>
+          <v-card-title class="educ-card-title">Universidade Unisinos</v-card-title>
           <v-card-text>
             <h2>Computer Science</h2>
-            <h3 class="mb-5"> (03/2023 - now)</h3>
-            <v-btn @click="openSkill(1)">Habilidades Adquiridas</v-btn>
-            <h4>Main Skills: Emocional intelligence, Algorithms, Innovation, Agile Enviroment, Databases, Software Engineering, Java</h4>
+            <h3 class="mb-5"> (03/2023 - agora)</h3>
+            <v-btn class="btn-style" @click="openSkill(0)">Habilidades Desenvolvidas</v-btn>
           </v-card-text>
         </div>
       </v-card>
     </v-col>
 
     <v-dialog
-                v-model="modalSkill[0]"
-                width="auto"
-              >
-              <v-card class="modal-project pa-6" max-width="800">
-                  <v-btn
-                      class="btn-close-modal ms-auto"
-                      text="x"
-                      @click="closeSkill(0)"
-                    ></v-btn>
-                  <v-card-title class="modal-title ma-3">Cópia Sicredi Front</v-card-title>
-
-                  <div class="spinner"></div>
-                <iframe class="video-player-tag" width="560" height="315" src="https://www.youtube.com/embed/NVWHSnOj88Y?si=xiBinubfCQoTM6Pk?autoplay=1&muted=1"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-
-                <v-btn href="https://sicredi-front-vue-gustavo-cortezia-86b69n3ht.vercel.app" class="btn-project-modal mt-6 mb-3">Abrir Projeto</v-btn>
-
-                </v-card>
-              </v-dialog>
+  class="dialog-unisinos"
+    v-model="modalSkill[0]"
+    width="auto"
+  >
+    <v-card class="modal-education pa-6" max-width="800">
+    <v-btn
+      class="btn-close-modal ms-auto"
+      text="x"
+      @click="closeSkill(0)"
+    ></v-btn>
+       <img class="unisinos_vista_img" src="../assets/unisinos_vista.png" alt="">
+       <v-card-title class="modal-title ma-3 mb-15">Universidade Unisinos</v-card-title>
+       <h2 class="habilidades-titulo">Habilidades Desenvolvidas:</h2>
+       <h3 class="habilidades-desenvolvidas">Inteligência Emocional | Algoritmos, Inovação | Metodologias Ágeis | Banco de dados | Engenharia de Software | Java</h3>
+      </v-card>
+    </v-dialog>
 
     <v-col md="6" sm="12" class="col-educ">
       <v-card class="unisinos-card mx-auto" width="400" height="550">
-        <v-img class="align-end text-white" height="300" width="400" src="../assets/logosinodalquadrado.webp" cover></v-img>
+        <v-img class="uni-img align-end text-white" height="300" width="400" src="../assets/logosinodalquadrado.webp" cover></v-img>
         <div class="pa-5">
           <v-card-title class="educ-card-title">Colégio Sinodal</v-card-title>
           <v-card-text>
             <h2>Educação Básica</h2>
             <h3 class="mb-5">(2006 - 2022)</h3>
-            <v-btn @click="openSkill(1)">Habilidades Adquiridas</v-btn>
-            <h4>Main Skills: Problem Solving, Creativity, Leadership, Creative Writing, Teamwork</h4>
+            <v-btn class="btn-style" @click="openSkill(1)">Habilidades Desenvolvidas</v-btn>
           </v-card-text>
         </div>
       </v-card>
@@ -164,22 +157,23 @@ function closeSkill(index: number) {
   </v-row>
 </div>
 
-<v-dialog
-                v-model="modalSkill[1]"
-                width="auto"
-              >
-              <v-card class="modal-project pa-6" max-width="800">
-                  <v-btn
-                      class="btn-close-modal ms-auto"
-                      text="x"
-                      @click="closeSkill(1)"
-                    ></v-btn>
-                    <img class="unisinos_vista_img" src="../assets/unisinos_vista.jpg" alt="">
-                  <v-card-title class="modal-title ma-3">Habilidads Adquiridas</v-card-title>
-                  <h4>Problem Solving, Creativity, Leadership, Creative Writing, Teamwork</h4>
-
-                </v-card>
-              </v-dialog>
+  <v-dialog
+  class="dialog-unisinos"
+    v-model="modalSkill[1]"
+    width="auto"
+  >
+    <v-card class="modal-education pa-6" max-width="800">
+    <v-btn
+      class="btn-close-modal ms-auto"
+      text="x"
+      @click="closeSkill(1)"
+    ></v-btn>
+       <img class="unisinos_vista_img" src="../assets/sinodal_vista.png" alt="">
+       <v-card-title class="modal-title ma-3 mb-15">Colégio Sinodal</v-card-title>
+       <h2 class="habilidades-titulo">Habilidades Desenvolvidas:</h2>
+       <h3 class="habilidades-desenvolvidas">Resolução de problemas | Criatividade | Liderança | Comunicação | Trabalho em equipe</h3>
+      </v-card>
+    </v-dialog>
 
 
 
@@ -273,7 +267,7 @@ function closeSkill(index: number) {
             <p>Front-end que imita a tela "Seja Associado" do site do Sicredi, com VueJs e Vuetify </p>
             <div class="text-center pa-4">
               <div class="text-center pa-4">
-              <v-btn @click="openDialog(3)">
+              <v-btn class="btn-style" @click="openDialog(3)">
                 Ver mais
               </v-btn>
 
@@ -312,7 +306,7 @@ function closeSkill(index: number) {
             <h3>Crud Mentores Growdev</h3>
             <p>Crud que gerencia mentores da Growdev, feita com VueJs (front) e Laravel (back), além do Vuetify para os estilos. Contém um crud completo com autenticação, barra de pesquisa, ordenação, etc.</p>
             <div class="text-center pa-4">
-              <v-btn @click="openDialog(1)">
+              <v-btn class="btn-style" @click="openDialog(1)">
                 Ver mais
               </v-btn>
 
@@ -346,7 +340,7 @@ function closeSkill(index: number) {
             <h3>API Rick and Morty</h3>
             <p>Listagem e pesquisa dos personagens da serie Rick and Morty de uma API utilizando HTMl, CSS, Bootsrap e Javascript.</p>
             <div class="text-center pa-4">
-              <v-btn @click="openDialog(2)">
+              <v-btn class="btn-style" @click="openDialog(2)">
                 Ver mais
               </v-btn>
 
@@ -380,7 +374,7 @@ function closeSkill(index: number) {
             <h3>GrowTwitter</h3>
             <p>Aplicação com VueJs e Laravel que imita a rede social "Twitter", com postagens, curtidas, página com listagem de tweets, página de perfil, login com autenticação e muito mais. Atividade feita em conjunto utilizando as funcionalidades git</p>
             <div class="text-center pa-4">
-              <v-btn @click="openDialog(0)">
+              <v-btn class="btn-style" @click="openDialog(0)">
                 Ver mais
               </v-btn>
 
@@ -414,7 +408,7 @@ function closeSkill(index: number) {
             <h3>Find my Pet</h3>
             <p>Aplicação que permite o usuário cadastrar animais perdidos com o objetivo de encontrar um lar para eles. Feito com Laravel, HTML, CSS e Javascript</p>
             <div class="text-center pa-4">
-              <v-btn @click="openDialog(4)">
+              <v-btn class="btn-style" @click="openDialog(4)">
                 Ver mais
               </v-btn>
 
@@ -607,12 +601,13 @@ function closeSkill(index: number) {
   .about-card {
     border-radius: 1rem !important;
     width: 70%;
-    height: 100%;
+    height: 97%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   }
 
   .about-card-text {
     font-size: 1.5rem;
+    text-align: justify;
   }
 
   .about-div {
@@ -1103,6 +1098,12 @@ function closeSkill(index: number) {
   }
 }
 
+@media (max-width: 900px) {
+  .projects-div{
+    height: 1650px;
+  }
+}
+
 @media (max-width: 817px) {
   .conhecimentos{
     width: 90%;
@@ -1158,13 +1159,28 @@ function closeSkill(index: number) {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .conhecimentos-div{
+    height: 3800px !important;
+    margin: 0 !important;
+  }
+
+  .projects-div{
+    height: 2500px !important;
+  }
+
   .unisinos-card{
     width: 400px !important;
     margin: 0 !important;
   }
 
-  .col-educ{
-    width: 500px;
+  .btn-style{
+    font-size: 0.6rem;
+  }
+
+
+.col-educ{
+    width: 200px !important;
+    padding: 00px !important;
   }
 
   .projects-div{
@@ -1181,8 +1197,8 @@ function closeSkill(index: number) {
   }
 
   .minha-foto{
-    height: 50px;
-    width: 50px;
+    height: 200px;
+    width: 200px;
   }
 
 }
@@ -1196,6 +1212,20 @@ function closeSkill(index: number) {
     margin: 0 !important;
   }
 
+  .about-card {
+    border-radius: 1rem !important;
+    width: 70%;
+    height: 99%;
+  }
+  .about-div{
+    margin: 0 !important;
+  }
+
+  .col-educ{
+    width: 200px !important;
+    padding: 00px !important;
+  }
+
   .projects-div{
     height: 2000px;
   }
@@ -1207,6 +1237,84 @@ function closeSkill(index: number) {
 
 h3{
   margin: 10px;
+}
+
+.unisinos_vista_img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.modal-education{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 600px;
+  border-radius: 5% !important;
+}
+
+.habilidades-desenvolvidas{
+  text-align: center;
+}
+
+@media (max-width: 445px) {
+  .modal-education{
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .unisinos_vista_img{
+  width: 200px;
+  height: 200px;
+}
+
+.unisinos-card{
+    width: 200px !important;
+  }
+
+  .col-educ {
+  /* Remova o width e padding forçado */
+  width: 100% !important;
+  padding: 0 !important;
+}
+}
+
+@media (max-width: 1150px) {
+  .nav-btns{
+    display: none !important;
+  }
+  .nav-title{
+    margin-left: 15px !important;
+  }
+
+}
+
+.btn-style{
+  color: rgb(17, 100, 209);
+}
+
+.btn-style:hover{
+  background-color: rgb(17, 100, 209);
+  color: white;
+}
+
+@media (max-width: 578px) {
+  .col-educ{
+    width: 100% !important;
+  }
+
+  .uni-img{
+    width: 100% !important;
+  }
+
+  .unisinos-card{
+    width: 80% !important;
+  }
+}
+
+.education-title{
+  text-align: center;
 }
 
 </style>
