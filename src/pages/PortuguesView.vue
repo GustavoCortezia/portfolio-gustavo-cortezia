@@ -1213,11 +1213,17 @@ function closeSkill(index: number) {
 
 @media (max-width: 480px) {
   .conhecimentos{
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
+
+  .skill-div{
+    width: 120px;
+    height: 120px;
+  }
+
   .conhecimentos-div{
-    height: 3200px;
-    margin: 0 !important;
+    height: 2000px !important;
+    margin-top: 800px !important;
   }
 
   .about-card {
