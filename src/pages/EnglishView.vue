@@ -196,7 +196,7 @@ function closeSkill(index: number) {
   <div class="grow-content">
     <h1 class="title-grow-card ma-5 mb-10">Starter Growdev Program - <span class="despertar-dev">Despertar.dev</span></h1>
 
-  <h3>O Programa Starter Full Stack Developer é uma formação completa que vai dos fundamentos da programação e tecnologia até o desenvolvimento de um software completo com front-end, back-end, banco de dados, cache, com qualidade garantida com testes automatizados e a disponibilização (deploy) do sistema em produção. Além disso, os alunos têm a oportunidade de aplicar os seus conhecimentos em projetos contratados por empresas, desenvolvidos na fábrica de software da Growdev.</h3>
+    <h3>The Starter Full Stack Developer Program is a complete training that goes from programming and technology fundamentals to the development of a complete software with front-end, back-end, database, cache, ensuring quality with automated tests and deployment of the system in production. Additionally, students have the opportunity to apply their knowledge to projects contracted by companies, developed in Growdev's software factory.</h3>
 <br>
   <h3>Fui selecionado pela<span class="despertar-dev"> Sicredi Pioneira</span>, por meio de um processo seletivo, para ganhar uma bolsa de estudos (100%) para o Starter Growdev Program, do qual me garantiu muito aprendizado e experiência </h3>
   <h3>Carga Horária: 1000 horas</h3>
