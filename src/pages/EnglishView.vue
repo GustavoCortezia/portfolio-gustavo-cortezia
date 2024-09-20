@@ -1082,6 +1082,10 @@ function closeSkill(index: number) {
     grid-template-rows: repeat(2, 1fr);
   }
 
+  .education-title{
+    font-size: 2rem;
+  }
+
   .title-grow-card{
     font-size: 1.6rem;
     text-align: center;
@@ -1130,6 +1134,10 @@ function closeSkill(index: number) {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .skill-div{
+    margin-bottom: 25px;
+  }
+
   .conhecimentos-div{
     height: 3800px !important;
     margin: 0 !important;
@@ -1163,7 +1171,7 @@ function closeSkill(index: number) {
   } */
 
   .contacts-div{
-    height: 1600px;
+    height: 2200px;
     margin-top: 100px !important;
   }
 
@@ -1289,5 +1297,6 @@ h3{
 }
 
 </style>
+
 
 
