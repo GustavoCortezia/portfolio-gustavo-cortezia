@@ -1082,6 +1082,31 @@ function closeSkill(index: number) {
     grid-template-rows: repeat(2, 1fr);
   }
 
+  .v-card {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  }
+
+  .modal-project {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.v-overlay__content {
+  width: 100vw !important;
+  max-width: 97vw !important;
+  height: 97vh !important;
+  max-height: 100vh !important;
+}
+
+.btn-close-modal{
+  margin-bottom: 10px;
+}
+
+.video-player-tag{
+  width: 100% !important;
+}
+
   .education-title{
     font-size: 2rem;
   }
@@ -1184,11 +1209,17 @@ function closeSkill(index: number) {
 
 @media (max-width: 480px) {
   .conhecimentos{
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
+
+  .skill-div{
+    width: 120px;
+    height: 120px;
+  }
+
   .conhecimentos-div{
-    height: 3200px;
-    margin: 0 !important;
+    height: 2000px !important;
+    margin-top: 800px !important;
   }
 
   .about-card {
