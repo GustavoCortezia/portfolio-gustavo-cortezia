@@ -179,31 +179,31 @@ function closeSkill(index: number) {
 
 
 
-<div class="grow-div mt-15">
+    <div class="grow-div mt-15">
 
-  <v-card
-    class="grow-card mx-auto"
-    width="1500px"
+<v-card
+  class="grow-card mx-auto"
+  width="1500px"
+  height="450px"
+>
+  <v-img
+    class="grow-img"
     height="450px"
-  >
-    <v-img
-      class="grow-img"
-      height="450px"
-      width="500px"
-      src="../assets/growdev-logo-branco.png"
-      cover
-    ></v-img>
-    <div class="grow-content">
-      <h1 class="title-grow-card ma-5 mb-10">Starter Growdev Program - <span class="despertar-dev">Despertar.dev</span></h1>
+    width="500px"
+    src="../assets/growdev-logo-branco.png"
+    cover
+  ></v-img>
+  <div class="grow-content">
+    <h1 class="title-grow-card ma-5 mb-10">Starter Growdev Program - <span class="despertar-dev">Despertar.dev</span></h1>
 
-    <h3>The Starter Full Stack Developer Program is a complete training that goes from programming and technology fundamentals to the development of a complete software with front-end, back-end, database, cache, ensuring quality with automated tests and deployment of the system in production. Additionally, students have the opportunity to apply their knowledge to projects contracted by companies, developed in Growdev's software factory.</h3>
+  <h3>O Programa Starter Full Stack Developer é uma formação completa que vai dos fundamentos da programação e tecnologia até o desenvolvimento de um software completo com front-end, back-end, banco de dados, cache, com qualidade garantida com testes automatizados e a disponibilização (deploy) do sistema em produção. Além disso, os alunos têm a oportunidade de aplicar os seus conhecimentos em projetos contratados por empresas, desenvolvidos na fábrica de software da Growdev.</h3>
 <br>
-    <h3>I was selected by <span class="despertar-dev">Sicredi Pioneira</span> through a selection process to receive a 100% scholarship for the Starter Growdev Program, from which I gained a lot of learning and experience</h3>
-    <h3>Total Hours: 1000 hours</h3>
-    </div>
+  <h3>Fui selecionado pela<span class="despertar-dev"> Sicredi Pioneira</span>, por meio de um processo seletivo, para ganhar uma bolsa de estudos (100%) para o Starter Growdev Program, do qual me garantiu muito aprendizado e experiência </h3>
+  <h3>Carga Horária: 1000 horas</h3>
+  </div>
 
 
-  </v-card>
+</v-card>
 
 </div>
 
@@ -1082,9 +1082,13 @@ function closeSkill(index: number) {
     grid-template-rows: repeat(2, 1fr);
   }
 
+  .grow-div{
+    height: 1400px !important;
+  }
+
   .v-card {
-  max-width: 100% !important;
-  max-height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
   }
 
   .modal-project {
@@ -1093,6 +1097,8 @@ function closeSkill(index: number) {
 }
 
 .v-overlay__content {
+  justify-content: center;
+  align-items: center;
   width: 100vw !important;
   max-width: 97vw !important;
   height: 97vh !important;
@@ -1126,6 +1132,7 @@ function closeSkill(index: number) {
 
   .conhecimentos-div{
     height: 1400px;
+    margin-top: 0 !important;
   }
 
   .grow-card{
@@ -1140,6 +1147,11 @@ function closeSkill(index: number) {
   .about-card{
     margin: 0 !important;
     width: 100% !important;
+    padding: 20px !important;
+  }
+
+  .about-card-text{
+    text-align: center;
   }
 
   .projects-div{
@@ -1164,12 +1176,12 @@ function closeSkill(index: number) {
   }
 
   .conhecimentos-div{
-    height: 3800px !important;
-    margin: 0 !important;
+    height: 1400px !important;
+    margin-top: 0 !important;
   }
 
   .projects-div{
-    height: 2500px !important;
+    height: 2300px !important;
   }
 
   .unisinos-card{
@@ -1219,7 +1231,7 @@ function closeSkill(index: number) {
 
   .conhecimentos-div{
     height: 2000px !important;
-    margin-top: 800px !important;
+    margin-top: 0 !important;
   }
 
   .about-card {
