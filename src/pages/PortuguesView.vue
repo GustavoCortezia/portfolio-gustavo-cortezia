@@ -1368,5 +1368,10 @@ h3{
   text-align: center;
 }
 
+@media (min-width: 1440px) and (max-width: 1690px) {
+  .soft-skills-div{
+    height: 1400px;
+  }
+}
 </style>
 
