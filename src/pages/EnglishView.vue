@@ -375,7 +375,7 @@ function closeSkill(index: number) {
                 <iframe class="video-player-tag" width="560" height="315" src="https://www.youtube.com/embed/z4cfkJIeUtk?si=Xbbq8FmiGvu2ot39?autoplay=1&muted=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
 
-                <v-btn href="https://growtwitter-iota.vercel.app/login" class="btn-project-modal mt-6 mb-3">Open Project</v-btn>
+                <v-btn href="https://develop.di2dciudu7zky.amplifyapp.com/login" class="btn-project-modal mt-6 mb-3">Open Project</v-btn>
               </v-card>
             </v-dialog>
           </div>
