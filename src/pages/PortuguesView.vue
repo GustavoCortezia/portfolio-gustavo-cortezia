@@ -94,7 +94,7 @@ function closeSkill(index: number) {
 
 <v-card-text>
   <p class="about-card-text">
-    Estou cursando o quarto semestre de Ciência da Computação na Universidade do Vale do Rio dos Sinos (Unisinos) e finalizando o programa de 1000 horas de formação em Desenvolvimento Web Full Stack na Growdev, uma escola de tecnologia que capacita profissionais para o mercado de trabalho. Por meio de um processo seletivo em que participaram mais de 1.200 candidatos, fui selecionado pela Sicredi Pioneira e recebi uma bolsa de estudos integral para o programa. Realizei todo o meu ensino fundamental e médio no Colégio Sinodal de São Leopoldo, reconhecido como uma das melhores escolas do Rio Grande do Sul.   </p>
+    Estou cursando o quarto semestre de Ciência da Computação na Universidade do Vale do Rio dos Sinos (Unisinos) e finalizei o programa de 1000 horas de formação em Desenvolvimento Web Full Stack na Growdev, uma escola de tecnologia que capacita profissionais para o mercado de trabalho. Por meio de um processo seletivo em que participaram mais de 1.200 candidatos, fui selecionado pela Sicredi Pioneira e recebi uma bolsa de estudos integral para o programa. Realizei todo o meu ensino fundamental e médio no Colégio Sinodal de São Leopoldo, reconhecido como uma das melhores escolas do Rio Grande do Sul.   </p>
 </v-card-text>
 
 <v-card-text>
@@ -391,7 +391,7 @@ function closeSkill(index: number) {
                   <v-card-title class="modal-title ma-3">GrowTwitter</v-card-title>
 
                   <div class="spinner"></div>
-                <iframe class="video-player-tag" width="560" height="315" src="https://www.youtube.com/embed/vbUeR-bH-iU?si=A4Y2KM1t6JbnzpjM?autoplay=1&muted=1"
+                <iframe class="video-player-tag" width="560" height="315" src="https://www.youtube.com/embed/z4cfkJIeUtk?si=Xbbq8FmiGvu2ot39?autoplay=1&muted=1"
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
 

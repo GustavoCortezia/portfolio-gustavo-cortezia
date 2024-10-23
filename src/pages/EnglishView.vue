@@ -94,7 +94,7 @@ function closeSkill(index: number) {
 
 <v-card-text>
   <p class="about-card-text">
-    I am currently in the fourth semester of Computer Science at the University of Vale do Rio dos Sinos (Unisinos) and finishing the 1000-hour Web Full Stack Development program at Growdev, a technology school that trains professionals for the job market. Through a selection process with over 1,200 candidates, I was selected by Sicredi Pioneira and received a full scholarship for the program. I completed all my primary and secondary education at Colégio Sinodal in São Leopoldo, recognized as one of the best schools in Rio Grande do Sul.
+    I am currently in the fourth semester of Computer Science at the University of Vale do Rio dos Sinos (Unisinos) and I've finished the 1000-hour Web Full Stack Development program at Growdev, a technology school that trains professionals for the job market. Through a selection process with over 1,200 candidates, I was selected by Sicredi Pioneira and received a full scholarship for the program. I completed all my primary and secondary education at Colégio Sinodal in São Leopoldo, recognized as one of the best schools in Rio Grande do Sul.
   </p>
 </v-card-text>
 
@@ -372,7 +372,7 @@ function closeSkill(index: number) {
                 <v-card-title class="modal-title ma-3">GrowTwitter</v-card-title>
 
                 <div class="spinner"></div>
-                <iframe class="video-player-tag" width="560" height="315" src="https://www.youtube.com/embed/vbUeR-bH-iU?si=A4Y2KM1t6JbnzpjM?autoplay=1&muted=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe class="video-player-tag" width="560" height="315" src="https://www.youtube.com/embed/z4cfkJIeUtk?si=Xbbq8FmiGvu2ot39?autoplay=1&muted=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
 
                 <v-btn href="https://growtwitter-iota.vercel.app/login" class="btn-project-modal mt-6 mb-3">Open Project</v-btn>
